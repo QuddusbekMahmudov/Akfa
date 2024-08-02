@@ -6,7 +6,6 @@ import logo from "../Img/logo.webp";
 import x from "../Img/ximg.png";
 import Dropdown from './Dropdown';
 import Okompanydropdown from './Okompanydropdown';
-import Navbar from './Navbar';
 
 
 const Header = () => {
