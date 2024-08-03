@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.css';
 import Home from './pages/Home';
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import PageNotFaund from './pages/PageNotFaund';
