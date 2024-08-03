@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 import Home from './pages/Home';
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
-import PageNotFaund from './pages/PageNotFaund';
+import PageNotFound from './pages/PageNotFound';
 import MainLayout from './layout/MainLayout';
 import Aksiya from './pages/Aksiya';
 import Kontakt from './pages/Kontakt';
@@ -63,7 +63,7 @@ const App = () => {
     createRoutesFromElements(
       <Route element={<MainLayout />}>
         <Route path='/' element={<Home />} />
-        <Route path='*' element={<PageNotFaund />} />
+        <Route path='*' element={<PageNotFound />} />
         <Route path='aksiya' element={<Aksiya />} />
         <Route path='narxlar' element={<Narxlarjadvali />} />
         <Route path='okompany' element={<Okompany />} />
