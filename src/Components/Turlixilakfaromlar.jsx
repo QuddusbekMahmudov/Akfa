@@ -62,11 +62,11 @@ const Turlixilakfaromlar = () => {
             <div>
                 <ul className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-y-3 sm:gap-4  md:gap-6 lg:gap-8">
                 {list.map((item) => (
-                         <li className='flex flex-col border-2 rounded-lg p-6 space-y-4'>
+                         <li className='flex flex-col border-2 rounded-lg p-6 space-y-4 '>
                              <img className='w-40 h-50' src={item.img} alt={item.title} />
                              <Link>
-                                 <h2 className='font-bold  text-2xl sm:text-3xl mb-4'>{item.title}</h2>
-                                 <p>{item.description}</p>
+                                 <h2 className='font-bold text-black text-2xl sm:text-3xl mb-4'>{item.title}</h2>
+                                 <p className='text-black'>{item.description}</p>
                              </Link>
                              <p>{item.profile}</p>
                              <p>{item.glazing}</p>
