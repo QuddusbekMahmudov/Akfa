@@ -14,6 +14,7 @@ const Dropdown3 = () => {
 
     const handleItemClick = (item) => {
         console.log(`Selected item: ${item}`);
+        setIsOpen(false); // Dropdownni yopish
     };
 
     return (
@@ -23,7 +24,7 @@ const Dropdown3 = () => {
             onMouseLeave={handleMouseLeave}
             style={{ position: 'relative', display: 'inline-block' }}
         >
-            <Link to={'/BalkonVaLojiklar'} className="dropdown-toggle opacity-70 flex items-center justify-between">
+            <Link to={'/BalkonVaLojiklar'} className="dropdown-toggle opacity-70 flex items-center justify-between" onClick={() => handleItemClick("Option 7")}>
               <span className='mr-4 hover:text-[#63b700] transition-all duration-300'>
               Балконы и лоджии
               </span>
@@ -38,39 +39,26 @@ const Dropdown3 = () => {
             </Link>
           
             {isOpen && (
-                <ul className="dropdown-menu" style={{
-                    display: 'block',
-                    position: 'absolute',
-                    top: '100%',
-                    left: -20,
-                    backgroundColor: '#fff',
-                    boxShadow: '0 2px 5px rgba(0, 0, 0, 0.15)',
-                    zIndex: 1000,
-                    listStyle: 'none',
-                    padding: 0,
-                    margin: 0,
-                    width: '300px'
-                }}>
-                <li className='opacity-70 border-2 hover:text-[#63b700] transition-all duration-300' onClick={() => handleItemClick("Option 1")} style={{ padding: '12px 15px', cursor: 'pointer' }}>
-                    <Link to="/YagonaPanjaraliOyna3">Холодное остекление</Link>
+                <ul className="dropdown-menu absolute top-full left-[-20px] bg-white shadow-md z-1000 list-none p-0 m-0 w-[300px]">
+                <li className='border-2'>
+                    <Link className=' w-[300px] inline-block opacity-70  hover:text-[#63b700] transition-all duration-300 py-3 px-4 cursor-pointer' to="/YagonaPanjaraliOyna3" onClick={() => handleItemClick("Option 1")}>Одностворчатое окно</Link >
                 </li>
-                <li className='opacity-70 border-x-2 hover:text-[#63b700] transition-all duration-300' onClick={() => handleItemClick("Option 2")} style={{ padding: '12px 15px', cursor: 'pointer' }}>
-                    <Link to={'/IkkiQavatliOyna3'}>Теплое остекление</Link>
+                <li className=' border-x-2' >
+                    <Link className=' w-[300px]  opacity-70 hover:text-[#63b700] transition-all duration-300 py-3 inline-block px-4 cursor-pointer'  to={'/IkkiQavatliOyna3'}  onClick={() => handleItemClick("Option 2")}>Двухстворчатое окно</Link>
                 </li>
-                <li className='opacity-70 border-2 hover:text-[#63b700] transition-all duration-300' onClick={() => handleItemClick("Option 3")} style={{ padding: '12px 15px', cursor: 'pointer' }}>
-                <Link to={'/UchOsilganDeraza3'}>Панорамное остекление</Link>
+                <li className=' border-2'>
+                <Link className=' w-[300px] inline-block opacity-70  hover:text-[#63b700] transition-all duration-300 py-3 px-4 cursor-pointer'to={'/UchOsilganDeraza3'} onClick={() => handleItemClick("Option 3")}>Трехстворчатое окно</Link>
                 </li>
-                <li className='opacity-70 border-x-2 hover:text-[#63b700] transition-all duration-300' onClick={() => handleItemClick("Option 4")} style={{ padding: '12px 15px', cursor: 'pointer' }}>
-                <Link to={'/DerazaBilan3'}>Балконный блок</Link>
+                <li className='border-x-2' >
+                <Link className=' w-[300px]  opacity-70 hover:text-[#63b700] transition-all duration-300 py-3 inline-block px-4 cursor-pointer' to={'/DerazaBilan3'} onClick={() => handleItemClick("Option 4")}>Окна с форточкой</Link>
                 </li>
-                <li className='opacity-70 border-2 hover:text-[#63b700] transition-all duration-300' onClick={() => handleItemClick("Option 5")} style={{ padding: '12px 15px', cursor: 'pointer' }}>
-                <Link to={'/EgriOynalar3'}>Ремонт балкона</Link>
+                <li className=' border-2' >
+                <Link className='w-[300px] inline-block opacity-70  hover:text-[#63b700] transition-all duration-300 py-3 px-4 cursor-pointer' to={'/EgriOynalar3'}  onClick={() => handleItemClick("Option 5")}>Фигурные окна</Link>
                 </li>
-                <li className='opacity-70 border-x-2 border-b-2 hover:text-[#63b700] transition-all duration-300' onClick={() => handleItemClick("Option 6")} style={{ padding: '12px 15px', cursor: 'pointer' }}>
-                <Link to={'/PremiumOynalar3'}>Утепление балконов</Link>
+                <li className='border-x-2 border-b-2 '>
+                <Link className=' w-[300px] inline-block opacity-70  hover:text-[#63b700] transition-all duration-300 py-3 px-4 cursor-pointer' to={'/PremiumOynalar3'}  onClick={() => handleItemClick("Option 6")} >Окна премиум-класса</Link>
                 </li>
                 </ul>
-                
             )}
         </div>
     );

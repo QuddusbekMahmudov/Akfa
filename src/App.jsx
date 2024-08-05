@@ -1,8 +1,7 @@
 import React from 'react';
-import './index.css';
 import Home from './pages/Home';
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
-import PageNotFound from './pages/PageNotFound';
+import PageNotFaund from './pages/PageNotFaund';
 import MainLayout from './layout/MainLayout';
 import Aksiya from './pages/Aksiya';
 import Kontakt from './pages/Kontakt';
@@ -63,7 +62,7 @@ const App = () => {
     createRoutesFromElements(
       <Route element={<MainLayout />}>
         <Route path='/' element={<Home />} />
-        <Route path='*' element={<PageNotFound />} />
+        <Route path='*' element={<PageNotFaund />} />
         <Route path='aksiya' element={<Aksiya />} />
         <Route path='narxlar' element={<Narxlarjadvali />} />
         <Route path='okompany' element={<Okompany />} />
@@ -116,13 +115,6 @@ const App = () => {
         <Route path='certifikat' element={<Certifikat />} />
         <Route path='ustaxonalar' element={<Ustaxonalar/>}/>
       </Route>
-
-
-
-
-
-
-
     )
   );
 

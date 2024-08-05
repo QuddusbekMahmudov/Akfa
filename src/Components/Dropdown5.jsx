@@ -14,6 +14,7 @@ const Dropdown5 = () => {
 
     const handleItemClick = (item) => {
         console.log(`Selected item: ${item}`);
+        setIsOpen(false); // Dropdownni yopish
     };
 
     return (
@@ -25,8 +26,7 @@ const Dropdown5 = () => {
         >
             <Link 
               to={'/TolovShartlari'} 
-              className="dropdown-toggle opacity-70 flex items-center justify-between"
-            >
+              className="dropdown-toggle opacity-70 flex items-center justify-between" onClick={() => handleItemClick("Option 7")} >
               <span className='mr-4 hover:text-[#63b700] transition-all duration-300'>
                 Условия оплаты
               </span>
@@ -41,33 +41,26 @@ const Dropdown5 = () => {
             </Link>
           
             {isOpen && (
-                <ul className="dropdown-menu" style={{
-                    display: 'block',
-                    position: 'absolute',
-                    top: '100%',
-                    left: -20,
-                    backgroundColor: '#fff',
-                    boxShadow: '0 2px 5px rgba(0, 0, 0, 0.15)',
-                    zIndex: 1000,
-                    listStyle: 'none',
-                    padding: 0,
-                    margin: 0,
-                    width: '300px'
-                }}>
-                <li 
-                  className='opacity-70 border-2 hover:text-[#63b700] transition-all duration-300' 
-                  onClick={() => handleItemClick("Option 1")} 
-                  style={{ padding: '12px 15px', cursor: 'pointer' }}
-                >
-                  <Link to="/YetkazibBerish">Доставка</Link>
+                <ul className="dropdown-menu absolute top-full left-[-20px] bg-white shadow-md z-1000 list-none p-0 m-0 w-[300px]">
+                <li className='border-2'>
+                    <Link 
+                      className='w-full inline-block opacity-70 hover:text-[#63b700] transition-all duration-300 py-3 px-4 cursor-pointer' 
+                      to="/YetkazibBerish"
+                      onClick={() => handleItemClick("Option 1")}
+                    >
+                    Доставка
+                    </Link>
                 </li>
-                <li 
-                  className='opacity-70 border-x-2 border-b-2 hover:text-[#63b700] transition-all duration-300' 
-                  onClick={() => handleItemClick("Option 2")} 
-                  style={{ padding: '12px 15px', cursor: 'pointer' }}
-                >
-                  <Link to="/TolovUsullari">Способы оплаты</Link>
+                <li className='border-x-2 border-b-2'>
+                    <Link 
+                      className='w-full inline-block opacity-70 hover:text-[#63b700] transition-all duration-300 py-3 px-4 cursor-pointer' 
+                      to="/TolovUsullari"
+                      onClick={() => handleItemClick("Option 2")}
+                    >
+                      Способы оплаты
+                    </Link>
                 </li>
+               
                 </ul>
             )}
         </div>

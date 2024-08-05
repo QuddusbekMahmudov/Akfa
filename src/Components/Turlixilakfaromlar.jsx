@@ -22,16 +22,19 @@ const Turlixilakfaromlar = () => {
             seal: "Rehau Raucell: черный, серый, белый",
             fittings: "Roto NT класс – Премиум",
             price: "6 450",
+            linkTitle: '/YagonaPanjaraliOyna1'
         },
         {
             img: akfa2,
             title: "Rehau Grazio",
-            description: "Всё еще недорогой вариант, но с повышенной тепло- и звукоизоляцией",
-            profile: "REHAU Grazio 70, пятикамерный",
+            description: "При традиционной глубине 60 мм окна обладают повышенной энергоэффективностью благодаря 4-камерному профилю",
+            profile: "REHAU Thermo 60, 4-х камерный",
             glazing: "2-х камерный, 32мм",
             seal: "Rehau Raucell: черный, серый, белый",
             fittings: "Roto NT класс – Премиум",
             price: "7 300",
+            linkTitle: '/IkkiQavatliOyna1'
+
         },
         {
             img: akfa3,
@@ -42,7 +45,10 @@ const Turlixilakfaromlar = () => {
             seal: "Rehau Raucell: черный, серый, белый",
             fittings: "Roto NT класс – Премиум",
             price: "8 250",
+            linkTitle: '/UchOsilganDeraza1'
+
         },
+        
     
     ];
 
@@ -54,7 +60,7 @@ const Turlixilakfaromlar = () => {
             </div>
 
             <div>
-                <ul className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 md:grid-cols-3 sm:gap-4  md:gap-6 lg:gap-8">
+                <ul className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-y-3 sm:gap-4  md:gap-6 lg:gap-8">
                 {list.map((item) => (
                          <li className='flex flex-col border-2 rounded-lg p-6 space-y-4'>
                              <img className='w-40 h-50' src={item.img} alt={item.title} />
@@ -62,7 +68,7 @@ const Turlixilakfaromlar = () => {
                                  <h2 className='font-bold  text-2xl sm:text-3xl mb-4'>{item.title}</h2>
                                  <p>{item.description}</p>
                              </Link>
-                             <p>{item.profilei}</p>
+                             <p>{item.profile}</p>
                              <p>{item.glazing}</p>
                              <p>{item.seal} </p>
                              <p>{item.fittings} </p>
@@ -71,7 +77,8 @@ const Turlixilakfaromlar = () => {
                                  <span className='text-black opacity-100 font-semibold text-xl sm:text-3xl mx-2'>{item.price}</span>
                                  <span className='opacity-60'>руб./м²</span>
                              </p>
-                             <p className='grow border-b-2 w-[50%] border-black pb-2'>подробнее о профиле</p>
+                             
+                             <Link to={item.linkTitle} className='grow border-b-2 w-[50%] border-black pb-2'> подробнее о профиле</Link>
                          </li>
                         ))}
                 </ul>

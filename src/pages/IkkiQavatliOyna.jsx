@@ -5,7 +5,7 @@ import PageWrapper from '../Components/PageWrapper'
 const IkkiQavatliOyna = () => {
   return (
     <PageWrapper>
-      <div className="w-full max-w-base mx-auto py-10 sm:py-20">
+      <div className="w-full max-w-base mx-auto px-5 py-10 sm:py-20">
         <h2 className='mb-10 opacity-60'>
           <Link to='/' className='text-[#79c701]'>Главная/</Link> <Link to={'/PlastikOynalar'} className='text-[#79c701]'>Пластиковые окна/</Link>Двухстворчатое окно
         </h2>

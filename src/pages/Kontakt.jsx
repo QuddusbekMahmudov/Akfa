@@ -37,7 +37,7 @@ const Kontakt = () => {
                     </div>
                 </div>
 
-                <div className='col-span-2 relative' style={{ height: '450px' }}>
+                <div className='col-span-2 relative bg-gray-300' style={{ height: '450px' }}>
                     <div className='absolute inset-0'>
                         <a
                             href="https://yandex.com/maps?utm_medium=mapframe&utm_source=maps"

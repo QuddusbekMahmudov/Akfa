@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
+import axios from "axios";
 import 'aos/dist/aos.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -10,6 +11,54 @@ import ayiqcha from "../Img/Ayiqcha.webp";
 import arrow from "../Img/arrowr.png";
 
 const HomeHero = () => {
+  // Telegram bot
+  const [phone, setPhone] = useState("");
+  const [name, setName] = useState("");
+  const [isCheckboxChecked, setIsCheckboxChecked] = useState(false);
+  const [checkboxError, setCheckboxError] = useState(false); // New state for checkbox error
+  const handleName = (event) => {
+    setName(event.target.value);
+  };
+
+  const handlePhone = (event) => {
+    setPhone(event.target.value);
+  };
+  const handleCheckboxChange = (event) => {
+    setIsCheckboxChecked(event.target.checked);
+    setCheckboxError(false); // Reset error state when checkbox is changed
+  };
+
+  const handleSubmitInput = (event) => {
+    event.preventDefault();
+    const trimmedName = name.trim();
+    const trimmedPhone = phone.trim();
+
+    if (trimmedName === "" || trimmedPhone === "") {
+      alert("Iltimos malumotni to'ldiring");
+    } else if (!isCheckboxChecked) {
+    } else {
+      const telegram_bot_id = "7233272711:AAH91LcYfkmAKISHvEZrCQwnisVlVIf7MBE";
+      const chat_id = "-1002167792051";
+
+      const telegramMessage = `Name: ${name}\nPhone Number: ${phone}`;
+
+      axios
+        .post(`https://api.telegram.org/bot${telegram_bot_id}/sendMessage`, {
+          chat_id,
+          text: telegramMessage,
+        })
+        .then((response) => {
+          setName("");
+          setPhone("");
+          setIsCheckboxChecked(false);
+          setCheckboxError(false); //
+          alert("Ma'lumot yuborildi!");
+        })
+        .catch((error) => {
+          console.error("Error sending message:", error);
+        });
+    }
+  };
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -73,10 +122,10 @@ const HomeHero = () => {
     <div className="w-full max-w-base mx-auto flex flex-col xl:flex-row lg:justify-between items-center py-12 px-5">
       <div className="w-full xl:mr-6 xl:mb-0 mb-5">
         <div className="bg-white">
-          <div className="w-full max-w-full xl:max-w-[1000px] mx-auto group">
+          <div className="w-full xl:max-w-[1000px] mx-auto group">
             <Slider {...settings}>
               <div className="relative">
-                <img className="w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover rounded-2xl" src={opaxon} alt="Opaxon" />
+                <img className="w-full h-[300px] sm:h-[400px] md:h-[520px] object-cover rounded-2xl" src={opaxon} alt="Opaxon" />
                 <div className="absolute inset-0 bg-black opacity-20 rounded-xl"></div>
                 <div
                   data-aos="fade-up"
@@ -111,29 +160,34 @@ const HomeHero = () => {
         </div>
       </div>
 
-      <div className="bg-[#63b700] p-10 rounded-lg space-y-2 w-full mx-auto text-center max-w-full lg:text-start xl:max-w-[400px] justify-center items-center">
+      <div className="bg-[#63b700] p-10 rounded-lg space-y-2 w-full mx-auto text-center lg:text-start xl:max-w-[400px] justify-center items-center">
         <h3 className="text-2xl md:text-3xl font-bold text-white">
           Хотите записаться на замер?
         </h3>
         <p className="text-white/70 text-[16px] md:text-[19px]">
           Оставьте заявку и мы перезвоним Вам в течении 10 минут
         </p>
-        <form className="space-y-5" action="#">
-          <input
-            className="bg-transparent placeholder-white w-full border-b border-white focus:outline-none pb-5"
+        <form onSubmit={handleSubmitInput} className="space-y-5" action="#">
+          <input onChange={handleName}
+                  value={name}
+                  required
+            className="bg-transparent placeholder-white w-full border-b border-white text-white focus:outline-none pb-5"
             type="text"
             placeholder="Ваше имя"
           />
-          <input
-            className="bg-transparent placeholder-white w-full border-b border-white focus:outline-none pb-5"
+          <input  onChange={handlePhone}
+                  value={phone}
+                  required
+            className="bg-transparent placeholder-white w-full border-b text-white border-white focus:outline-none pb-5"
             type="tel"
             placeholder="+7 (000) 090-99-99"
           />
-        </form>
         <div className="flex justify-start items-start space-x-2">
           <label className="flex items-start space-x-2">
-            <input
-              type="checkbox"
+            <input type="checkbox"
+                    id="privacy"
+                    checked={isCheckboxChecked}
+                    onChange={handleCheckboxChange} 
               className="form-checkbox h-6 w-6 bg-black border-gray-300 rounded cursor-pointer"
             />
             <p className="opacity-60 text-white text-sm md:text-base">
@@ -142,11 +196,14 @@ const HomeHero = () => {
                 <u>политикой конфиденциальности</u>
               </Link>
             </p>
+            
+            {checkboxError && <p className="text-red-500 text-sm">Пожалуйста, подтвердите согласие</p>}
           </label>
         </div>
-        <button className="py-3 px-6 md:py-6 md:px-10 text-black font-semibold bg-white rounded-lg hover:text-white hover:border-white border-2 hover:bg-[#63b700] transition-colors duration-300">
+        <button type='submit'  className="py-3 px-6 md:py-6 md:px-10 text-black font-semibold bg-white rounded-lg hover:text-white hover:border-white border-2 hover:bg-[#63b700] transition-colors duration-300">
           Оставить заявку
         </button>
+        </form>
       </div>
     </div>
   );

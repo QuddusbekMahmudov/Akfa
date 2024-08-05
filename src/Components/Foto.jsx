@@ -61,9 +61,7 @@ const Foto = () => {
             >
                 {renderGallery()}
             </LightGallery>
-            <Link className="" >
-            <span className="border-b-2 w-full border-b-black text-black/60 pb-4">смотреть все фото</span>
-            </Link>
+          
         </div>
     );
 };

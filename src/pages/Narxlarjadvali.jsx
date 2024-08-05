@@ -18,7 +18,6 @@ const Narxlarjadvali = () => {
       list2:'Площадь - 24 кв. м',
       span: 'Стоимость за сутки:',
       span2: 'от 2 700 р.',
-      btn: 'Забронировать',
       btn2: 'Подробнее'     
     },
    
@@ -31,7 +30,6 @@ const Narxlarjadvali = () => {
       list2:'Площадь - 24 кв. м',
       span: 'Стоимость за сутки:',
       span2: 'от 2 700 р.',
-      btn: 'Забронировать',
       btn2: 'Подробнее'     
     },
     {
@@ -43,7 +41,6 @@ const Narxlarjadvali = () => {
       list2:'лощадь - 46 кв. м',
       span: 'Стоимость за сутки:',
       span2: ' от 2 700 р.',
-      btn: 'Забронировать',
       btn2: 'Подробнее'     
     },
     {
@@ -55,7 +52,6 @@ const Narxlarjadvali = () => {
       list2:'лощадь - 46 кв. м',
       span: 'Стоимость за сутки:',
       span2: ' от 2 300 р.',
-      btn: 'Забронировать',
       btn2: 'Подробнее'     
     },
   ]
@@ -81,13 +77,10 @@ const Narxlarjadvali = () => {
               </ul>
               <div className=' flex flex-col py-5'>
                 <span>{item.span}</span>
-                <span className='inline-block text-4xl font-bold grow'>{item.span2}</span>
+                <span className='inline-block grow text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-16'>{item.span2}</span>
               </div>
             </div>
-            <div className='space-y-5'>
-            <button className=' text-white bg-[#4285f4] w-full py-4 rounded-lg'>{item.btn}</button>
             <button className='  text-xl opacity-65 bg-[#d9e7fc] w-full py-4 rounded-lg'>{item.btn2}</button>
-            </div>
           </li>
             ))}
           </ul>

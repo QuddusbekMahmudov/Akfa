@@ -106,7 +106,7 @@ const Haqqoniyfikrlar = () => {
                     ))}
                 </ul>
 
-                <Link >
+                <Link className='mt-10 inline-block' to='/bizhaqimizda'>
                     <span className="border-b-[1px] w-full border-b-black text-black/60 pb-4">читать все отзывы</span>
                 </Link>
             </div>

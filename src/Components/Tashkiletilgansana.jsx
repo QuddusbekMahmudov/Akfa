@@ -13,7 +13,7 @@ const Tashkiletilgansana = () => {
                 <p className='space-y-5 mb-10 opacity-70 text-md sm:text-lg'>
                     Мы обеспечиваем ежедневный режим работы. Квалифицированные менеджеры всегда готовы предоставить консультационную помощь и дать ответы на любые возникающие вопросы.
                 </p>
-                <Link >
+                <Link to='/kamanda' >
                     <span className="border-b-[1px] w-full border-b-black text-black/60 pb-4">читать подробнее</span>
                 </Link>
 

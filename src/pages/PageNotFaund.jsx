@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const PageNotFound = () => {
-  const navigate = useNavigate(); // To'g'ri nomlash: 'navigate' o'rnatildi
+const PageNotFaund = () => {
+  const naigate= useNavigate();
 
   useEffect(() => {
     // 3 soniyadan keyin asosiy sahifaga qaytarish
     const timer = setTimeout(() => {
-      navigate('/'); // 'history.push' o'rniga 'navigate' funksiyasidan foydalanamiz
+      history.push('/');
     }, 3000);
     return () => clearTimeout(timer);
-  }, [navigate]); // 'history' o'rniga 'navigate'
+  }, [history]);
 
   return (
     <div className="flex items-center justify-center h-screen bg-gray-100">
@@ -23,4 +23,4 @@ const PageNotFound = () => {
   );
 };
 
-export default PageNotFound;
+export default PageNotFaund;
