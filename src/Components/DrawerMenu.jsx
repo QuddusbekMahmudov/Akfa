@@ -390,7 +390,7 @@ const SubMenu = ({ label, key, current, open, toggleSubMenu, children, disabled,
                 className={`flex items-center justify-between  p-4 w-full text-left ${current === key ? 'bg-gray-200' : ''} ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
             >
                 {label}
-                <img className={`transition-transform duration-100 ${open ? 'rotate-90' : 'rotate-0'} w-3 h-3`}
+                <img className={`transition-transform duration-100 rounded-full ${open ? 'rotate-90' : 'rotate-0'} w-3 h-3`}
                     src={arrow}
                     alt="arrow icon"
                 />
