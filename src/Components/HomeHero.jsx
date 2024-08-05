@@ -141,7 +141,7 @@ const HomeHero = () => {
               </div>
 
               <div className="relative">
-                <img className="w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover rounded-2xl" src={ayiqcha} alt="Ayiqcha" />
+                <img className="w-full h-[300px] sm:h-[400px] md:h-[520px] object-cover rounded-2xl" src={ayiqcha} alt="Ayiqcha" />
                 <div className="absolute inset-0 bg-black opacity-20 rounded-2xl"></div>
                 <div
                   data-aos="fade-up"

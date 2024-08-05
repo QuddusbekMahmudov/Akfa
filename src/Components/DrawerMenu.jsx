@@ -73,7 +73,7 @@ export function DrawerMenu() {
                 className="w-full max-w-[400px] inline-block z-50 scroll-auto"
                 placement="right"
             >
-                <img className=' absolute top-0 right-0 w-10 h-10' src={x} alt="img" onClick={closeDrawer} />
+                <img className='rounded-full absolute top-0 right-0 w-10 h-10' src={x} alt="img" onClick={closeDrawer} />
 
                 <div ref={menuRef} className=" w-full mt-10 max-w-[500px]  h-full max-h-[90vh] overflow-hidden overflow-y-auto flex flex-col">
                     <SubMenu

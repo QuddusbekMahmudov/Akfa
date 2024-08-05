@@ -141,7 +141,7 @@ const BizHaqimizda = () => {
                     className={`fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 transition-opacity duration-300 ${isModalOpen ? 'opacity-100' : 'opacity-0'}`}
                     onClick={handleOverlayClick}>
                     <div className='max-w-[350px] sm:max-w-[450px] md:max-w-[550px] lg:max-w-[650px] xl:max-w-[750px] mt-24 md:mt-36 lg:mt-0  bg-white w-full mx-auto rounded-xl relative  p-3 sm:p-9'>
-                        <button onClick={() => setIsModalOpen(false)} className='absolute top-4 right-4 w-12 md:w-10 h-12 md:h-10'><img src={x} alt="Close" /></button>
+                        <button onClick={() => setIsModalOpen(false)} className='absolute top-4 right-4 w-12 md:w-10 h-12 md:h-10'><img className='rounded-full' src={x} alt="Close" /></button>
                         <div className='px-5 md:px-10 py-12'>
                             <h1 className='text-black/50 text-3xl md:text-3xl font-bold mb-7'>Оставить отзыв</h1>
                             <form onSubmit={handleSubmitInput}>

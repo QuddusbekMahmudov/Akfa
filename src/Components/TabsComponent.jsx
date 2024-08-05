@@ -224,7 +224,7 @@ const TabsComponent = () => {
                     onClick={handleOverlayClick}
                 >
                     <div className={`bg-white w-full max-w-[80%] sm:max-w-[60%] mt-24 md:mt-36 lg:mt-0 lg:max-w-[550px] space-y-3 md:space-y-6  p-8 sm:p-10 md:p-20 rounded-lg shadow-lg transition-transform duration-300 ${isInfoModalOpen ? 'scale-100' : 'scale-95'}`}>
-                        <img className='absolute top-1 right-1 sm:top-4 sm:right-4 w-12 h-12 cursor-pointer' src={x} alt="Close" onClick={toggleInfoModal} />
+                        <img className=' rounded-full absolute top-1 right-1 sm:top-4 sm:right-4 w-12 h-12 cursor-pointer' src={x} alt="Close" onClick={toggleInfoModal} />
                         <h2 className=" text-md md:text-3xl font-bold text-center">Остались вопросы? Оставьте заявку</h2>
                         <span className='opacity-60 text-center inline-block'>и наши специалисты свяжутся с Вами в самое ближайшее время</span>
                         <div>
