@@ -249,7 +249,7 @@ const TabsComponent = () => {
                                         {checkboxError && <p className="text-red-500 text-sm">Пожалуйста, подтвердите согласие</p>}
                                     </label>
                                 </div>
-                                <button  type="submit" className="py-6 px-20 w-full hover:text-black hover:border-[#63b700] border-2 text-white font-semibold hover:bg-white bg-[#63b700] rounded-lg transition-colors duration-300">
+                                <button  type="submit" className="sm:py-6 py-3 px-10 sm:px-20 w-full hover:text-black hover:border-[#63b700] border-2 text-white font-semibold hover:bg-white bg-[#63b700] rounded-lg transition-colors duration-300">
                                     Оставить заявку
                                 </button>
                             </form>
