@@ -10,7 +10,7 @@ const PremiumOynalar = () => {
         <h2 className='mb-10 opacity-60'>
           <Link to='/' className='text-[#79c701]'>Главная/</Link> <Link to={'/PlastikOynalar'} className='text-[#79c701]'>Пластиковые окна/</Link>Окна премиум-класса
         </h2>
-        <h1 className='text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-16'>Окна премиум-класса</h1>
+        <h1 className='text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-16'>Окна премиум-класса</h1>
         <p className='space-y-5 opacity-60 mb-20  text-md sm:text-xl md:text-2xl'>
           Элитное остекление — гарантия максимального комфорта и отражение статуса домочадцев. Премиальные пластиковые окна выглядят эффектней стандартных аналогов, сконструированы иначе и стоят дороже.
         </p>

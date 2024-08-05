@@ -11,7 +11,7 @@ const ObektlarVaXizmatKorsatish = () => {
           <Link to='/' className='text-[#79c701]'>Главная/</Link>
           Услуги
         </h2>
-        <h1 className='text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-16'>
+        <h1 className='text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-16'>
           Услуги</h1>
         <div className='space-y-5 opacity-60 mb-20  text-md sm:text-xl md:text-2xl'>
           <p>

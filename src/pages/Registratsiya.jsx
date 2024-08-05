@@ -73,7 +73,7 @@ const Registratsiya = () => {
                         <Link to='/ruxsatbolimi' className="text-[#79c701] text-[16px]"> <u>Авторизация</u><span className='mx-1'>/</span></Link>
                         <p className='text-[#a5a3a3]'>Регистрация</p>
                     </div>
-                    <h3 className='text-[30px] md:text-[50px] font-bold mb-6 md:mb-10'>
+                    <h3 className='text-[30px] md:text-4xl font-bold mb-6 md:mb-10'>
                         Регистрация
                     </h3>
                     <div className='flex flex-col-reverse md:flex-row items-start md:items-start'>

@@ -12,7 +12,7 @@ const Kontakt = () => {
             <h2 className='mb-5 opacity-60'>
                 <Link to='/' className='text-[#79c701]'>Главная/</Link>Контакты
             </h2>
-            <h1 className='text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-16'>Контакты</h1>
+            <h1 className='text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-16'>Контакты</h1>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-5 lg:gap-10">
                 <div className='w-full max-w-[448px] space-y-5'>

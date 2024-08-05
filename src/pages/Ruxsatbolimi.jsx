@@ -47,7 +47,7 @@ const Ruxsatbolimi = () => {
     return (
         <PageWrapper>
             <div className='w-full max-w-base py-24 px-5 md:px-10 mx-auto'>
-                <div className='flex items-center mb-4 md:mb-0 space-x-2'>
+                <div className='flex items-center mb-4 space-x-2'>
                     <Link to='/' className="text-[#79c701] text-[16px]">
                         <u>Главная / </u>
                     </Link>
@@ -57,7 +57,7 @@ const Ruxsatbolimi = () => {
                     <p className='text-[#a5a3a3] md:self-end'>Авторизация</p>
                 </div>
 
-                <h3 className='text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-6'>
+                <h3 className='text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6'>
                     Авторизация
                 </h3>
 

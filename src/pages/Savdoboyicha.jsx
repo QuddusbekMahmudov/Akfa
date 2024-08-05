@@ -10,7 +10,7 @@ const Savdoboyicha = () => {
                     <Link to='/' className='text-[#79c701]'>Главная   /</Link> <Link to='/yangiliklar' className='text-[#79c701]'>Новости    /</Link><Link to='/tashrifbuyuruvchilar' className='text-[#79c701]' >Для посетителей   /</Link>
                    Советы покупателям
                 </h2>
-                <h1 className='text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-16'>
+                <h1 className='text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-16'>
                    Советы покупателям
                 </h1>
 

@@ -34,10 +34,10 @@ const Certifikat = () => {
        
          <PageWrapper>
              <div className="w-full max-w-base mx-auto py-3 px-5">
-            <div className=" my-16 lg:my-20">
+            <div className=" my-10 lg:my-14">
                 <h2 className='mb-5 opacity-60'>
                     <Link to='/' className='text-[#79c701]'>Главная  / </Link>Сертификаты</h2>
-                <h1 className='font-bold text-2xl md:text-3xl lg:text-5xl'>Сертификаты</h1>
+                <h1 className='font-bold text-2xl md:text-3xl lg:text-4xl'>Сертификаты</h1>
             </div>
             <LightGallery
                 speed={500}

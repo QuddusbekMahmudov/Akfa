@@ -33,16 +33,16 @@ const TolovUsullari = () => {
         <h2 className='mb-10 opacity-60'>
           <Link to='/' className='text-[#79c701]'>Главная/</Link> <Link to={'/TolovShartlari'} className='text-[#79c701]'>Условия оплаты/</Link>Способы оплаты
         </h2>
-        <h1 className='text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-16'>Способы оплаты</h1>
+        <h1 className='text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-14'>Способы оплаты</h1>
 
         <Accordion open={open === 1} icon={<Icon id={1} open={open} />} className='border-y-2 border-black'>
-          <AccordionHeader onClick={() => handleOpen(1)} className='opacity-60 text-3xl font-bold '>Далеко-далеко за словесными горами</AccordionHeader>
+          <AccordionHeader onClick={() => handleOpen(1)} className='text-xl md:text-2xl font-bold opacity-60  '>Далеко-далеко за словесными горами</AccordionHeader>
           <AccordionBody className='opacity-60 text-xl leading-10'>
             Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.
           </AccordionBody>
         </Accordion>
         <Accordion open={open === 2} icon={<Icon id={2} open={open} />} className='border-b-2 border-black'>
-          <AccordionHeader onClick={() => handleOpen(2)} className='opacity-60 text-3xl font-bold'>
+          <AccordionHeader onClick={() => handleOpen(2)} className='text-xl md:text-2xl font-bold opacity-60 '>
             Великий Оксмокс
           </AccordionHeader>
           <AccordionBody  className='opacity-60 text-xl leading-10'>

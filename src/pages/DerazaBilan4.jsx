@@ -10,7 +10,7 @@ const DerazaBilan4 = () => {
           <Link to='/' className='text-[#79c701]'>Главная/</Link> <Link to={'/ObektlarVaXizmatKorsatish'} className='text-[#79c701]'>Услуги и сервис/</Link>
           Ремонт окон
         </h2>
-        <h1 className='text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-16'>
+        <h1 className='text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-16'>
           Ремонт окон</h1>
 
         <p className='space-y-5 opacity-60 mb-5 text-md sm:text-xl md:text-2xl'>

@@ -287,12 +287,8 @@ const Header = () => {
           </div>
         </div>
       )}
-      <div>
+      
         <DrawerMenu />
-      </div>
-
-
-
 
     </>
   );

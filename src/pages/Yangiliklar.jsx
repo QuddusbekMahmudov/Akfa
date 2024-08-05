@@ -85,7 +85,7 @@ const Yangiliklar = () => {
                 <h2 className='mb-5 opacity-60'>
                     <Link to='/' className='text-[#79c701]'>Главная/</Link>Новости
                 </h2>
-                <h1 className='text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-16'>Новости</h1>
+                <h1 className='text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-16'>Новости</h1>
                 <YangiliklarDropdown />
                 <div className='w-full mx-auto py-5 '>
                     <ul className='space-y-2'>

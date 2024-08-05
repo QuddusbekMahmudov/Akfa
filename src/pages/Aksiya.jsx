@@ -40,7 +40,7 @@ const Aksiya = () => {
       <h2 className='mb-5 opacity-60'>
         <Link to='/' className='text-[#79c701]'>Главная/</Link> Акции
       </h2>
-      <h1 className='text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-16'>Акции</h1>
+      <h1 className='text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-16'>Акции</h1>
       <div className="w-full">
 
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">

@@ -9,7 +9,7 @@ const IkkiQavatliOyna = () => {
         <h2 className='mb-10 opacity-60'>
           <Link to='/' className='text-[#79c701]'>Главная/</Link> <Link to={'/PlastikOynalar'} className='text-[#79c701]'>Пластиковые окна/</Link>Двухстворчатое окно
         </h2>
-        <h1 className='text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-16'>Двухстворчатое окно</h1>
+        <h1 className='text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-16'>Двухстворчатое окно</h1>
         <p className='space-y-5 opacity-60 mb-10 text-md sm:text-xl md:text-2xl'>
           Если в комнату поступает недостаточно света, хочется увеличить обзор из окна или добавить «воздуха»,
           заказывайте панорамное остекление в пол. Французские окна на балконе позволяют обозревать окружающие пейзажи,

@@ -10,7 +10,7 @@ const YagonaPanjaraliOyna3 = () => {
         <h2 className='mb-10 opacity-60'>
           <Link to='/' className='text-[#79c701]'>Главная/</Link> <Link to={'/BalkonVaLojiklar'} className='text-[#79c701]'>Балконы и лоджии/</Link>Холодное остекление
         </h2>
-        <h1 className='text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-16'>Холодное остекление</h1>
+        <h1 className='text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-16'>Холодное остекление</h1>
         <p className=' space-y-5 opacity-60 mb-10 text-md sm:text-xl md:text-2xl'>
           Алюминиевое остекление мало весит, стоит недорого. Его можно устанавливать на любое основание, как в новостройках, так и в старых хрущевках. Раздвижные створки легко открываются, экономят свободное пространство. Они защищает балкон от влаги, пыли, грязи, сквозняков.
         </p>

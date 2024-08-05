@@ -54,6 +54,11 @@ import Media from './pages/Media';
 import Banner from './pages/Banner';
 import MalumotYigish from './pages/MalumotYigish';
 import BloguchunMaqola from './pages/BloguchunMaqola';
+import Standart from './pages/Standart';
+import Biznes from './pages/Biznes';
+import Komport from './pages/Komfort';
+import Luks from './pages/Luks';
+import Komfort from './pages/Komfort';
 
 const App = () => {
 
@@ -114,6 +119,10 @@ const App = () => {
         <Route path='bloguchunmaqola' element={<BloguchunMaqola/>}/>
         <Route path='certifikat' element={<Certifikat />} />
         <Route path='ustaxonalar' element={<Ustaxonalar/>}/>
+        <Route path='standart' element={<Standart/>}/>
+        <Route path='biznes' element={<Biznes/>}/>
+        <Route path='komfort' element={<Komfort/>}/>
+        <Route path='luks' element={<Luks/>}/>
       </Route>
     )
   );

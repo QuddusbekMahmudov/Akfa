@@ -120,7 +120,7 @@ const BizHaqimizda = () => {
                         <Link to='/Okompany' className="text-[#79c701] text-[14px] md:text-[16px]"><u>О компании </u><span className='mx-1'>/</span></Link>
                         <p className='text-[#a5a3a3] text-[14px] md:text-[16px]'>Отзывы о нас</p>
                     </div>
-                    <h3 className='font-bold text-3xl md:text-5xl sm:mb-16'>Отзывы о нас</h3>
+                    <h3 className='font-bold text-3xl md:text-4xl sm:mb-16'>Отзывы о нас</h3>
                     <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8 '>
                         {list.map((item) => (
                             <li key={item.id}>

@@ -10,7 +10,7 @@ const BalkonVaLojikalar = () => {
         <h2 className='sm:mb-5 opacity-60'>
           <Link to='/' className='text-[#79c701]'>Главная/</Link> Балконы и лоджии
         </h2>
-        <h1 className='text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-16'>Балконы и лоджии</h1>
+        <h1 className='text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-16'>Балконы и лоджии</h1>
         <div className=' space-y-5 opacity-60 mb-10 text-md sm:text-xl md:text-2xl'>
           <p>Наша компания остекляет балконы и лоджии любых форм и размеров. Изготавливаем и устанавливаем остекление из теплого пластикового профиля REHAU или холодного алюминия Provedal. Выполняем усиление парапета, выносное и панорамное остекление, отделку, объединение лоджий с комнатой. Даем гарантию на выполненные работы, выполняем послегарантийное и сервисное обслуживание.</p>
           <h3 className='text-gray-600 text-[22px] space-y-5'>Теплое остекление</h3>

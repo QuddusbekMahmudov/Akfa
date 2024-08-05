@@ -10,7 +10,7 @@ const YagonaPanjaraliOyna1 = () => {
         <h2 className='mb-10 opacity-60'>
           <Link to='/' className='text-[#79c701]'>Главная/</Link> <Link to={'/Profillar'} className='text-[#79c701]'>Профили/</Link>Rehau Thermo
         </h2>
-        <h1 className='text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-16'>Rehau Thermo</h1>
+        <h1 className='text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-16'>Rehau Thermo</h1>
         <p className='space-y-5 opacity-60 mb-20  text-md sm:text-xl md:text-2xl'>
 
           VIDNAL — алюминиевый профиль для оконно-дверных, фасадных систем. За счет уменьшенной ширины профиля «Виднал» конструкции выглядят легче, элегантнее. Изготовим окна и двери VIDNAL для коммерческих, жилых помещений, выполним фасадное, кровельное остекление. Обеспечиваем доставку и монтаж. Официальная гарантия — от 5 лет!

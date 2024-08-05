@@ -9,7 +9,7 @@ const BloguchunMaqola = () => {
                 <h2 className='mb-10 opacity-60'>
                     <Link to='/' className='text-[#79c701]'>Главная/</Link>Оптимизация статьи для блога
                 </h2>
-                <h1 className='text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-16'>Оптимизация статьи для блога</h1>
+                <h1 className='text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-16'>Оптимизация статьи для блога</h1>
                 <time className='opacity-65 mb-5 inline-block' datetime="01.03.2022">Дата публикации: 01.03.2022</time>
                 <div className="space-y-5">
                 <p className=' text-md space-y-5 opacity-60 mb-10'>Почему этот пункт идет вторым? Потому что после сбора информации необходимо начать подготовку к оптимизации статьи. И начинать надо с подбора ключа для статьи. Помните о том, что для статьи подбирается только одно ключевое слово. Но подобрать его необходимо четко по теме.

@@ -9,7 +9,7 @@ const YagonaPanjaraliOyna4 = () => {
         <h2 className='mb-10 opacity-60'>
           <Link to='/' className='text-[#79c701]'>Главная/</Link> <Link to={'/ObektlarVaXizmatKorsatish'} className='text-[#79c701]'>Установка окон/</Link>Установка окон
         </h2>
-        <h1 className='text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-16'>Установка окон</h1>
+        <h1 className='text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-16'>Установка окон</h1>
         <p className='space-y-5 opacity-60 mb-20  text-md sm:text-xl md:text-2xl'>
           От качества монтажа зависят герметичность окон, срок службы, способность противостоять порывам ветра, устойчивость к промерзанию. Заказать в Москве монтаж ПВХ-окон REHAU по ГОСТ вы можете в нашей компании.
         </p>

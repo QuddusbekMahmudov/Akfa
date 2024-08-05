@@ -188,7 +188,7 @@ const HomeHero = () => {
                     id="privacy"
                     checked={isCheckboxChecked}
                     onChange={handleCheckboxChange} 
-              className="form-checkbox h-6 w-6 bg-black border-gray-300 rounded cursor-pointer"
+              className="form-checkbox h-6 w-6 sm:h-14 sm:w-14 bg-black border-gray-300 rounded cursor-pointer"
             />
             <p className="opacity-60 text-white text-sm md:text-base">
               Я согласен(а) с обработкой персональных данных и{' '}

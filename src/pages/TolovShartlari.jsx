@@ -10,7 +10,7 @@ const TolovShartlari = () => {
         <h2 className='mb-5 opacity-60'>
           <Link to='/' className='text-[#79c701]'>Главная/</Link> Условия оплаты
         </h2>
-        <h1 className='text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-16'>Условия оплаты</h1>
+        <h1 className='text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-16'>Условия оплаты</h1>
         <div className='space-y-5 opacity-60 mb-20  text-md sm:text-xl md:text-2xl'>
           <p>В данном блоке Вы можете разместить как ознакомительную статью о предоставляемых Вами услугах, так и полноценный каталог предложений.</p>
           <p>Возможно, будет целесообразно разбить услуги по тематическим категориям.</p>

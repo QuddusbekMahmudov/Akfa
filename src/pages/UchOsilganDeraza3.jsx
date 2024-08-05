@@ -9,7 +9,7 @@ const UchOsilganDeraza3 = () => {
         <h2 className='mb-10 opacity-60'>
           <Link to='/' className='text-[#79c701]'>Главная/</Link> <Link to={'/BalkonVaLojiklar'} className='text-[#79c701]'>Балконы и лоджии/</Link>Панорамное остеклени
         </h2>
-        <h1 className='text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-16'>Панорамное остекление</h1>
+        <h1 className='text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-16'>Панорамное остекление</h1>
         <p className='space-y-5 opacity-60 mb-10 text-md sm:text-xl md:text-2xl'>
           Сделайте пространство дома, квартиры максимально светлым и просторным с помощью остекления балкона панорамными окнами. С ними комната стильно смотрится и хорошо освещена, нет никаких препятствий для обзора. Окна в пол — интересное решение для коттеджей за городом и лоджий в мегаполисе. Они способны украсить любой фасад.
         </p>

@@ -55,7 +55,7 @@ export function DrawerMenu() {
     return (
         <div className="relative ">
             <div>
-                <button className=" xl:hidden z-50 fixed -top-1  -right-1 flex items-center space-x-4 text-white bg-[#63b700] px-8 py-4 rounded-lg" onClick={openDrawer}>
+                <button className="xl:hidden z-50 fixed -top-1  -right-1 flex items-center space-x-4 text-white bg-[#63b700] px-8 py-4 rounded-lg" onClick={openDrawer}>
                     <span className='font-medium text-xl'>меню</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#fff" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <line x1="3" y1="12" x2="21" y2="12"></line>

@@ -9,7 +9,7 @@ const PremiumOynalar3 = () => {
         <h2 className='mb-10 opacity-60'>
           <Link to='/' className='text-[#79c701]'>Главная/</Link> <Link to={'/BalkonVaLojiklar'} className='text-[#79c701]'>Балконы и лоджии/</Link>Утепление балконов
         </h2>
-        <h1 className='text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-16'>Утепление балконов</h1>
+        <h1 className='text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-16'>Утепление балконов</h1>
         <h3 className='sm:text-2xl text-lg text-gray-500 font-bold mb-8'>Отопление на балконе</h3>
         <p className='space-y-5 opacity-60 mb-20  text-md sm:text-xl md:text-2xl'>
           Чтобы сделать помещение жилым, необходимо утеплить пол, потолок, стены, установить отопительные приборы. Чаще всего у нас заказывают монтаж батареи отопления. Также мы настилаем теплый пол под финишное покрытие, используя сетчатые маты. Монтируем инфракрасные элементы, нагревающие предметы поблизости.

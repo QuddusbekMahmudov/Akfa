@@ -10,7 +10,7 @@ const Tashabbus = () => {
                     <Link to='/' className='text-[#79c701]'>Главная   /</Link> <Link to='/yangiliklar' className='text-[#79c701]'>Новости    /</Link><Link to='/ustaxonalar' className='text-[#79c701]' >Производственные цеха  /</Link>
                     Инициативный аудит
                 </h2>
-                <h1 className='text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-16'>
+                <h1 className='text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-16'>
                     Инициативный аудит
                 </h1>
 

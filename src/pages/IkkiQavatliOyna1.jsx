@@ -9,7 +9,7 @@ const IkkiQavatliOyna1 = () => {
         <h2 className='mb-10 opacity-60'>
           <Link to='/' className='text-[#79c701]'>Главная/</Link> <Link to={'/Profillar'} className='text-[#79c701]'>Профили/</Link>Rehau Grazio
         </h2>
-        <h1 className='text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-16'>Rehau Grazio</h1>
+        <h1 className='text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-16'>Rehau Grazio</h1>
         <p className='space-y-5 opacity-60 mb-20 text-md sm:text-xl md:text-2xl'>
           Под брендом выпускаются «теплые» и «холодные» профильные системы из алюминия. Мы изготавливаем окна и двери ALUVET под заказ, по индивидуальным размерам. Оснащаем системы одно- или двухкамерными стеклопакетами, запорной фурнитурой, аксессуарами. Обслуживаем объекты в Москве и Московской области.
         </p>

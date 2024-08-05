@@ -10,7 +10,7 @@ const Texnikyordam = () => {
                     <Link to='/' className='text-[#79c701]'>Главная   /</Link> <Link to='/yangiliklar' className='text-[#79c701]'>Новости    /</Link><Link to='/kompaniyayangiliklari' className='text-[#79c701]' >Новости компании   /</Link>
                     Техподдержка 24 часа в сутки
                 </h2>
-                <h1 className='text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-16'>Техподдержка 24 часа в сутки
+                <h1 className='text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-16'>Техподдержка 24 часа в сутки
                 </h1>
 
 

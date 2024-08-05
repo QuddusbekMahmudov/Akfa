@@ -39,7 +39,7 @@ const Ustaxonalar = () => {
                 <h2 className='mb-5 opacity-60'>
                     <Link to='/' className='text-[#79c701]'>Главная/</Link> <Link to='/yangiliklar' className='text-[#79c701]'>Новости/</Link>Производственные цеха
                 </h2>
-                <h1 className='text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-16'>Производственные цеха</h1>
+                <h1 className='text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-16'>Производственные цеха</h1>
                 <YangiliklarDropdown />
                 <div className='w-full max-w-[1450px] mx-auto py-5 '>
                     <ul className='space-y-2'>

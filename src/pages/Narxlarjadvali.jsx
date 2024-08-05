@@ -13,6 +13,7 @@ const Narxlarjadvali = () => {
       id: 2,
       rasmlar: standart,
       title:'Cтандарт',
+      linktitle: '/standart',
       matn:'Удобные и уютные номера идеально подойдут как для отдыха, так и для деловых поездок.',
       list:'Одноместные номера',
       list2:'Площадь - 24 кв. м',
@@ -25,6 +26,7 @@ const Narxlarjadvali = () => {
       id: 2,
       rasmlar: komfort,
       title:'Комфорт',
+      linktitle: '/komfort',
       matn:'Удобные и уютные номера идеально подойдут как для отдыха, так и для деловых поездок.',
       list:'Одноместные номера',
       list2:'Площадь - 24 кв. м',
@@ -36,6 +38,7 @@ const Narxlarjadvali = () => {
       id: 3,
       rasmlar: biznes,
       title:'Бизнес',
+      linktitle: '/biznes',
       matn:'Номер в гостинице обеспечит каждому гостю высокое качество сервиса по разумной цене.',
       list:'Двухместные номера',
       list2:'лощадь - 46 кв. м',
@@ -47,6 +50,7 @@ const Narxlarjadvali = () => {
       id: 4,
       rasmlar: delyuks,
       title:'Делюкс',
+      linktitle: '/luks',
       matn:'Номер позволит ощутить себя как дома. Подходит для приятного отдыха двух гостей..',
       list:'Двухместные номера',
       list2:'лощадь - 46 кв. м',
@@ -61,7 +65,7 @@ const Narxlarjadvali = () => {
         <h2 className='mb-5 opacity-60'>
           <Link to='/' className='text-[#79c701]'>Главная  / </Link>Прайс-лист
         </h2>
-        <h1 className='font-bold text-2xl md:text-3xl lg:text-5xl mb-16'>Прайс-лист</h1>
+        <h1 className='font-bold text-2xl md:text-3xl lg:text-4xl mb-16'>Прайс-лист</h1>
         <div className="w-full">
         <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-4 sm:gap-4 md:gap-6 lg:gap-8'>
 
@@ -75,12 +79,12 @@ const Narxlarjadvali = () => {
                 <li className='list-disc'>{item.list}</li>
                 <li className='list-disc'>{item.list2}</li>
               </ul>
-              <div className=' flex flex-col py-5'>
+              <div className='flex flex-col py-5'>
                 <span>{item.span}</span>
-                <span className='inline-block grow text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-16'>{item.span2}</span>
+                <span className='inline-block grow text-2xl sm:text-3xl md:text-4xl font-bold mb-4'>{item.span2}</span>
               </div>
             </div>
-            <button className='  text-xl opacity-65 bg-[#d9e7fc] w-full py-4 rounded-lg'>{item.btn2}</button>
+            <Link to={item.linktitle} className='text-xl opacity-65 bg-[#d9e7fc] text-center py-4 rounded-lg hover:text-[#63b700] transition-all duration-300 font-medium '>{item.btn2}</Link>
           </li>
             ))}
           </ul>
